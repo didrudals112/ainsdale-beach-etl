@@ -109,20 +109,20 @@ Once our data has been transformed and uploaded to S3, the load function uses th
 With our data warehouse now populated, we connected Google Looker to perform preliminary data visualisation. We created a data set based on fact_sales_order, with adjoining dim tables, to generate a visualisation of typical key queries.
 
 ### KPI Scorecards & Deliveries Heat Map
-![KPI Scorecards and Deliveries Heat Map](Visualisation/Data_Visualisation.png)
+![KPI Scorecards and Deliveries Heat Map](Visualisation/Data%20Visualisation.png)
 
 ### Totesys Sales Data — Units Sold Per Design & Over Time
-![Totesys Sales Data](Visualisation/Totesys_Sales_Data.png)
+![Totesys Sales Data](Visualisation/Totesys%20Sales%20Data.png)
 
 ### Units Sold by Month
-![Units Sold by Month 2022](Visualisation/Units_Sold_by_Month_2022.png)
-![Units Sold by Month 2023-2024](Visualisation/Units_Sold_By_Month.png)
+![Units Sold by Month 2022](Visualisation/Units%20Sold%20by%20Month%202022.png)
+![Units Sold by Month 2023-2024](Visualisation/Units%20Sold%20By%20Month.png)
 
 ### Units Sold Per Quarter
-![Units Sold Per Quarter 2023-2024](Visualisation/Units_Sold_Per_Quarter.png)
+![Units Sold Per Quarter 2023-2024](Visualisation/Units%20Sold%20Per%20Quarter.png)
 
 ### Currency Distribution & Deliveries Per Country
-![Currency Used by Customers and Deliveries Per Country](Visualisation/Currency_Used_By_Customers___Deliveries_Per_Country.png)
+![Currency Used by Customers and Deliveries Per Country](Visualisation/Currency%20Used%20By%20Customers%20%26%20Deliveries%20Per%20Country.png)
 
 ## Hosting
 Our infrastructure has been provisioned in AWS, employing the following services: 
