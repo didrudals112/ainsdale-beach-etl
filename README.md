@@ -10,6 +10,25 @@ The main objectives of this project are to be able to handle regular data update
 An additional feature of this project is to have an S3 bucket containing processed data in Parquet, that mirrors our processed data to permit further analysis better suited to that format.
 Our aim with this project is to enable analysis of important business data without compromising performance for day-to-day transactional operations.
 
+## Data Visualisation
+With our data warehouse now populated, we connected Google Looker to perform preliminary data visualisation. We created a data set based on fact_sales_order, with adjoining dim tables, to generate a visualisation of typical key queries.
+
+### KPI Scorecards & Deliveries Heat Map
+![KPI Scorecards and Deliveries Heat Map](Visualisation/Data%20Visualisation.png)
+
+### Totesys Sales Data — Units Sold Per Design & Over Time
+![Totesys Sales Data](Visualisation/Totesys%20Sales%20Data.png)
+
+### Units Sold by Month
+![Units Sold by Month 2022](Visualisation/Units%20Sold%20by%20Month%202022.png)
+![Units Sold by Month 2023-2024](Visualisation/Units%20Sold%20By%20Month.png)
+
+### Units Sold Per Quarter
+![Units Sold Per Quarter 2023-2024](Visualisation/Units%20Sold%20Per%20Quarter.png)
+
+### Currency Distribution & Deliveries Per Country
+![Currency Used by Customers and Deliveries Per Country](Visualisation/Currency%20Used%20By%20Customers%20%26%20Deliveries%20Per%20Country.png)
+
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
 
@@ -104,25 +123,6 @@ Once our data has been transformed and uploaded to S3, the load function uses th
     transformed_shape = transformed_df.shape[0]                  # row count of table in S3
     tail = transformed_shape - db_df_shape                       # the difference between S3 and the warehouse
 ```
-
-## Data Visualisation
-With our data warehouse now populated, we connected Google Looker to perform preliminary data visualisation. We created a data set based on fact_sales_order, with adjoining dim tables, to generate a visualisation of typical key queries.
-
-### KPI Scorecards & Deliveries Heat Map
-![KPI Scorecards and Deliveries Heat Map](Visualisation/Data%20Visualisation.png)
-
-### Totesys Sales Data — Units Sold Per Design & Over Time
-![Totesys Sales Data](Visualisation/Totesys%20Sales%20Data.png)
-
-### Units Sold by Month
-![Units Sold by Month 2022](Visualisation/Units%20Sold%20by%20Month%202022.png)
-![Units Sold by Month 2023-2024](Visualisation/Units%20Sold%20By%20Month.png)
-
-### Units Sold Per Quarter
-![Units Sold Per Quarter 2023-2024](Visualisation/Units%20Sold%20Per%20Quarter.png)
-
-### Currency Distribution & Deliveries Per Country
-![Currency Used by Customers and Deliveries Per Country](Visualisation/Currency%20Used%20By%20Customers%20%26%20Deliveries%20Per%20Country.png)
 
 ## Hosting
 Our infrastructure has been provisioned in AWS, employing the following services: 
